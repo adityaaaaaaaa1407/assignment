@@ -4,14 +4,15 @@ import Spotlight from "@/components/Spotlight";
 export default function Home() {
   return (
     <>
-      <div className=" ">home</div>
-      <div>
-        <div className="mb-12">
-          <Sports />
-        </div>
-
+      <div className=" m-20 mt-4">
         <div>
-          <Spotlight />
+          <div className="mb-10">
+            <Sports />
+          </div>
+
+          <div>
+            <Spotlight />
+          </div>
         </div>
       </div>
     </>
