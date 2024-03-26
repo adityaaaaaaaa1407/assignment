@@ -10,13 +10,7 @@ const Sports = () => {
       </span>
       <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  md:gap-3 gap-6 mt-8 ">
         {sports.map((sport, index) => (
-          <SportCard
-            key={index}
-            name={sport.name}
-            img={sport.img}
-            total_events={sport.total_events}
-            sport_name={sport.sport_name}
-          />
+          <SportCard key={index} {...sport} />
         ))}
 
         <Advertisement />
