@@ -1,25 +1,28 @@
 const Advertisement = () => {
   return (
-    <div className="">
-      <div className="" />
-
-      <div className={`px-4 border-2 border-t-0 p-6 border-[#006555] `}>
-        <div className="bg-black m-2.5 text-center w-12 font-bold text-base absolute right-0 top-0 z-10">
+    <div className=" h-[511px] w-[238.5px] dark:bg-[#3B3E47]   object-cover p-2 border border-[#000000] border-opacity-5  ">
+      <div className="relative ">
+        <div className="bg-black m-2 text-center w-12 font-bold text-base text-white absolute right-0 top-0 z-10">
           Ad
         </div>
-        <img
-          src="./images/ad.png"
-          alt="advertisement"
-          className="w-full h-55"
-        />
-        <p className={`text-xl font-semibold mb-2 `}>Advertisement title</p>
-        <p className={`text-[13px] leading-5  `}>
-          {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          accusantium minima quam rem iure. Accusantium impedit ullam magni
-          eaque itaque esse voluptatibus, quasi placeat, tenetur est modi odit
-          blanditiis praesentium.{" "}
-        </p>
+        <div className="border border-[#006555]  ">
+          <img
+            src="./images/ad.png"
+            alt="advertisement"
+            className="w-full h-55"
+          />
+          <p className="mt-6 font-semibold text-center text-xl">
+            Advertisement title
+          </p>
+          <div className="mr-4 ml-4 mt-2 mb-8">
+            <p className="text-[#525965] text-[12.8px] dark:text-[#DFDFDF]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis accusantium minima quam rem iure. Accusantium impedit
+              ullam magni eaque itaque esse voluptatibus, quasi placeat, tenetur
+              est modi odit blanditiis praesentium abs .{" "}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

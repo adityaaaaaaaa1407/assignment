@@ -1,32 +1,27 @@
 "use client";
 
+import Darkmode from "@/components/Darkmode";
 import Sports from "@/components/Sports";
 
 import Spotlight from "@/components/Spotlight";
-import { useState } from "react";
 
 export default function Home() {
-  const [lightMode, setLightMode] = useState(true);
-
-  function toggleMode() {
-    setLightMode((prevMode) => !prevMode);
-  }
   return (
     <>
-      <div
-        className={`m-20 mt-4 ${lightMode ? "bg-[#F7F7F8]" : "bg-[#292B32]"}`}
-      >
-        <div>
-          <div
-            className={`mb-10 ${lightMode ? "bg-white" : "bg-black"}`}
-            onClick={toggleMode}
-          >
-            <img src={`/images/${lightMode ? "light.png" : "dark.png" }`} alt="mode" />
-            <Sports lightMode={lightMode}/>
+      <div className="bg-[#F7F7F8] dark:bg-[#292B32]">
+        <div
+          className="sm:m-20 m-4 sm:mt-4 mt-2 
+           flex flex-col "
+        >
+          <div className="mb-4">
+            <Darkmode />
+          </div>
+          <div className="mb-10 ">
+            <Sports />
           </div>
 
-          <div>
-            <Spotlight  lightMode={lightMode}/>
+          <div className="">
+            <Spotlight />
           </div>
         </div>
       </div>
