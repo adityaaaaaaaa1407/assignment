@@ -22,12 +22,12 @@ export default function Spotlight() {
   };
 
   return (
-    <div className="sm:w-[1240px]  sm:h-[918px] object-cover border border-black  dark:bg-gradient-to-b from-[#18282A] to-[#221A2C]  ">
-      <div className="m-20 border border-black sm:w-[1085.75px] sm:h-[799px]">
+    <div className="xl:w-[1240px]  xl:h-[918px] object-cover border dark:border-[#18282A] border-[#F9F8FF] dark:bg-gradient-to-b dark:from-[#18282A] dark:to-[#221A2C] bg-gradient-to-b from-[#F9F8FF] to-[#F3F9FF]  ">
+      <div className="m-20  xl:w-[1085.75px] xl:h-[799px]">
         <p className="text-4xl font-extrabold text-center dark:text-white">
           Collection Spotlight
         </p>
-        <div className="mt-4 text-[14px] mb-12 font-normal text-center flex flex-col dark:text-white">
+        <div className="mt-4 lg:text-[14px]  mb-12 font-normal text-center flex flex-col dark:text-white">
           <span>
             Discover extraordinary moments with our Spotlight Collection meta
             tickets—exclusive access to premium events for an unforgettable
@@ -40,7 +40,7 @@ export default function Spotlight() {
           id="slider"
         >
           <div
-            className="w-[36.75px] h-[49px] py-4 px-3 border-2 border-[#2C9CF0] cursor-pointer justify-start"
+            className="xl:w-[36.75px] xl:h-[49px] py-4 px-3 border-2 border-[#2C9CF0] cursor-pointer justify-start"
             onClick={handlePrev}
           >
             <Image src="/images/back.png" width={200} height={200} alt="back" />
@@ -52,7 +52,7 @@ export default function Spotlight() {
           })}
 
           <div
-            className="w-[36.75px] h-[49px] py-4 px-3 border-2 border-[#2C9CF0] cursor-pointer "
+            className="xl:w-[36.75px] lg:h-[49px] py-4 px-3 border-2 border-[#2C9CF0] cursor-pointer "
             onClick={handleNext}
           >
             <Image

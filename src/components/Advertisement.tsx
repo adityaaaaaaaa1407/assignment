@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Advertisement = () => {
   return (
-    <div className=" h-[511px] w-full dark:bg-[#3B3E47]   object-cover p-2 border border-[#000000] border-opacity-5   shadow-[0_8px_16px_0_rgba(0,0,0,0.05)]">
+    <div className=" xl:w-full xl:h-[511px]   dark:bg-[#3B3E47]   object-cover p-2 border border-[#000000] border-opacity-5   shadow-[0_8px_16px_0_rgba(0,0,0,0.05)]">
       <div className="relative ">
         <div className="bg-black m-2 text-center w-12 font-bold text-base text-white absolute right-0 top-0 z-10">
           Ad
@@ -11,7 +11,7 @@ const Advertisement = () => {
           <Image
             src="/images/ad.png"
             alt="advertisement"
-            className="w-full h-55"
+            className="xl:w-full xl:h-55 "
             width={200}
             height={200}
           />

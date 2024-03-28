@@ -4,8 +4,8 @@ import Advertisement from "./Advertisement";
 
 const Sports = () => {
   return (
-    <div className="sm:w-[1249px] sm:h-[673px] border border-black dark:text-white ">
-      <span className=" text-xl underline decoration-cyan-600 underline-offset-8 font-extrabold">
+    <div className="xl:w-[1249px] xl:h-[673px]  dark:text-white ">
+      <span className=" text-xl underline decoration-cyan-600 underline-offset-8 font-extrabold ">
         Sports
       </span>
       <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  md:gap-3 gap-6 mt-8 ">
@@ -14,7 +14,7 @@ const Sports = () => {
             <SportCard {...sport} />
           </div>
         ))}
-        <div className="sm:ml-0 ml-20 bg-white">
+        <div className="xl:ml-0 ml-20 bg-white ">
           <Advertisement />
         </div>
       </div>

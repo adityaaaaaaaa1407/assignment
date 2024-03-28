@@ -23,7 +23,7 @@ const Ticket = ({
     <>
       <div
         className="border-none border-[#000000] border-opacity-5  bg-white dark:bg-[#3B3E47] p-2 object-cover relative
-    w-[257px] h-[625px]  shadow-[0_8px_16px_0_rgba(0,0,0,0.05)]"
+    xl:w-[257px] xl:h-[625px]  shadow-[0_8px_16px_0_rgba(0,0,0,0.05)]"
       >
         <Image
           src={`/images/${img}`}
@@ -34,7 +34,7 @@ const Ticket = ({
         />
 
         <div className="my-2  mx-2 p-0 space-x-1 text-[#A9ACB2]">
-          <span className="w-[10px] h-[20px] bg-[#f0f0f1]  absolute border-none  overflow-visible rounded-r-full left-0 m-0 dark:bg-gradient-to-b from-[#18282A] to-[#221A2C]"></span>
+          <span className="xl:w-[10px] xl:h-[20px] bg-[#f0f0f1]  absolute border-none  overflow-visible rounded-r-full left-0 m-0 dark:bg-gradient-to-b from-[#18282A] to-[#221A2C]"></span>
           <span>-</span>
           <span>-</span>
           <span>-</span>
@@ -55,7 +55,7 @@ const Ticket = ({
           <span>-</span>
           <span>-</span>
           <span
-            className="w-[10px] h-[20px] 
+            className="xl:w-[10px] xl:h-[20px] 
           bg-[#f0f0f1] border-none absolute overflow-hidden right-0 rounded-l-full dark:bg-gradient-to-b from-[#18282A] to-[#221A2C] "
           ></span>
         </div>
@@ -74,7 +74,7 @@ const Ticket = ({
           <span className="text-[#525965] dark:text-[#DFDFDF]">{address}</span>
         </div>
 
-        <button className=" bg-black text-white rounded-sm text-sm py-2 text-center  mt-6 w-[213px] h-[36px] ml-4 ">
+        <button className=" bg-black text-white rounded-sm text-sm py-2 text-center  mt-6 xl:w-[213px] xl:h-[36px] ml-4 ">
           {button_name} Collection
         </button>
       </div>
