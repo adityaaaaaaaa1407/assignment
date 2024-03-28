@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import Ticket from "./Ticket";
 import tickets from "@/data/tickets";
+import Image from "next/image";
 
 export default function Spotlight() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -21,7 +22,7 @@ export default function Spotlight() {
   };
 
   return (
-    <div className="sm:w-[1240px]  sm:h-[918px] object-cover border border-black ">
+    <div className="sm:w-[1240px]  sm:h-[918px] object-cover border border-black  dark:bg-gradient-to-b from-[#18282A] to-[#221A2C]  ">
       <div className="m-20 border border-black sm:w-[1085.75px] sm:h-[799px]">
         <p className="text-4xl font-extrabold text-center dark:text-white">
           Collection Spotlight
@@ -42,7 +43,7 @@ export default function Spotlight() {
             className="w-[36.75px] h-[49px] py-4 px-3 border-2 border-[#2C9CF0] cursor-pointer justify-start"
             onClick={handlePrev}
           >
-            <img src="/images/back.png" alt="back" />
+            <Image src="/images/back.png" width={200} height={200} alt="back" />
           </div>
           {[0, 1, 2].map((offset) => {
             const index = (currentSlide + offset) % tickets.length;
@@ -54,7 +55,12 @@ export default function Spotlight() {
             className="w-[36.75px] h-[49px] py-4 px-3 border-2 border-[#2C9CF0] cursor-pointer "
             onClick={handleNext}
           >
-            <img src="/images/front.png" alt="front" />
+            <Image
+              src="/images/front.png"
+              width={200}
+              height={200}
+              alt="front"
+            />
           </div>
         </div>
       </div>

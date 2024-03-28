@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { MdDarkMode } from "react-icons/md";
-import { MdLightMode } from "react-icons/md";
 
 const Darkmode = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -22,12 +21,10 @@ const Darkmode = () => {
 
   return (
     <div
-      className="text-2xl  relative w-16 h-8 flex items-center dark:bg-gray-900 bg-teal-500 cursor pointer rounded-full p-1"
+      className="text-3xl  relative w-8 h-8 flex items-center dark:bg-gray-900 bg-teal-500 cursor pointer rounded-full p-1"
       onClick={() => setDarkMode(!darkMode)}
     >
       <MdDarkMode className="text-white" />
-      {/* <MdLightMode /> */}
-      <div className="absolute bg-white dark:bg-slate-500 w-6 gh-6 rounded-full shadow-md transform transition-transform duration-300"></div>
     </div>
   );
 };

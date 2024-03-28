@@ -1,20 +1,15 @@
+import Image from "next/image";
+
 interface ISportType {
   name: string;
   img: string;
   total_events: number;
   sport_name: string;
-  lightMode: boolean;
 }
 
-const SportCard = ({
-  name,
-  img,
-  total_events,
-  sport_name,
-  lightMode,
-}: ISportType) => {
+const SportCard = ({ name, img, total_events, sport_name }: ISportType) => {
   return (
-    <div className="border border-[#000000] border-opacity-5 bg-white dark:bg-[#3B3E47]   p-2 object-cover h-[511px] w-[238.5px]">
+    <div className="border border-[#000000] border-opacity-5 bg-white dark:bg-[#3B3E47]   p-2 object-cover h-[511px] w-[238.5px]  shadow-[0_8px_16px_0_rgba(0,0,0,0.05)]">
       <div className="container">
         <img src={`./images/${img}`} alt="" className="m-auto" />
         <p className="font-semibold mb-2 mt-2 text-[17px] dark:text-white">

@@ -4,7 +4,7 @@ import Advertisement from "./Advertisement";
 
 const Sports = () => {
   return (
-    <div className="sm:w-[1249px] sm:h-[673px] border border-black dark:text-white">
+    <div className="sm:w-[1249px] sm:h-[673px] border border-black dark:text-white ">
       <span className=" text-xl underline decoration-cyan-600 underline-offset-8 font-extrabold">
         Sports
       </span>

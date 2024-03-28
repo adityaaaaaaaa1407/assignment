@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 const Advertisement = () => {
   return (
-    <div className=" h-[511px] w-[238.5px] dark:bg-[#3B3E47]   object-cover p-2 border border-[#000000] border-opacity-5  ">
+    <div className=" h-[511px] w-full dark:bg-[#3B3E47]   object-cover p-2 border border-[#000000] border-opacity-5   shadow-[0_8px_16px_0_rgba(0,0,0,0.05)]">
       <div className="relative ">
         <div className="bg-black m-2 text-center w-12 font-bold text-base text-white absolute right-0 top-0 z-10">
           Ad
