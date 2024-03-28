@@ -25,7 +25,13 @@ const Ticket = ({
         className="border-none border-[#000000] border-opacity-5  bg-white dark:bg-[#3B3E47] p-2 object-cover relative
     w-[257px] h-[625px]  shadow-[0_8px_16px_0_rgba(0,0,0,0.05)]"
       >
-        <img src={`/images/${img}`} alt="" className="mx-auto " />
+        <Image
+          src={`/images/${img}`}
+          alt=""
+          className="mx-auto "
+          width={226}
+          height={401}
+        />
 
         <div className="my-2  mx-2 p-0 space-x-1 text-[#A9ACB2]">
           <span className="w-[10px] h-[20px] bg-[#f0f0f1]  absolute border-none  overflow-visible rounded-r-full left-0 m-0 dark:bg-gradient-to-b from-[#18282A] to-[#221A2C]"></span>

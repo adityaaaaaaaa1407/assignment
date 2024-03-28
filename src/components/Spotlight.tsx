@@ -27,7 +27,7 @@ export default function Spotlight() {
         <p className="text-4xl font-extrabold text-center dark:text-white">
           Collection Spotlight
         </p>
-        <div className="mt-4 text-[14px]  font-normal text-center flex flex-col dark:text-white">
+        <div className="mt-4 text-[14px] mb-12 font-normal text-center flex flex-col dark:text-white">
           <span>
             Discover extraordinary moments with our Spotlight Collection meta
             tickets—exclusive access to premium events for an unforgettable

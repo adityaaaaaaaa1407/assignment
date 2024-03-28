@@ -8,10 +8,12 @@ const Advertisement = () => {
           Ad
         </div>
         <div className="border border-[#006555]  ">
-          <img
-            src="./images/ad.png"
+          <Image
+            src="/images/ad.png"
             alt="advertisement"
             className="w-full h-55"
+            width={200}
+            height={200}
           />
           <p className="mt-6 font-semibold text-center text-xl">
             Advertisement title
